@@ -1,0 +1,226 @@
+% This document utilises the "moderncv" package for LaTeX
+% http://www.ctan.org/pkg/moderncv
+
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[red]{banking}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.8]{geometry}
+\recomputelengths
+
+% Prevent page breaks within sections/paragraphs
+\widowpenalties 1 10000
+\raggedbottom
+
+\usepackage{tabularx}
+\usepackage{multicol}
+
+\title{Software Engineer}
+\firstname{Ben}
+\familyname{Brooks}
+\address{1 Flixton Drive, Crewe, Cheshire}{CW2 8AP}
+\phone{+44 (0)7784-144-093}
+\email{ben@bbrks.me}
+\homepage{bbrks.me}
+\social[linkedin]{bbrks}
+%\social[github]{bbrks}
+%\social[twitter]{bbrks\_}
+
+\begin{document}
+	\maketitle
+
+	\vspace{-3.5em}
+
+%	\section{Profile}
+%		\cvline{}{}
+
+	\section{Employment}
+		\cventry
+			{October 2015 - Present}{Software Engineer - Golang developer, DevOps, and Scrum Master}
+			{de Poel}{Knutsford, Cheshire}
+			{}{
+			\vspace{.25em}
+			\cvline{}{Large scale rewrite of legacy PHP monolith into scalable, Go microservices for Angular 2 and mobile front-ends.}
+			\vspace{.1em}
+			\begin{itemize}
+				\item Designed and developed scalable and RESTful microservices, along with a bespoke API Gateway to deliver our product to the Angular 2, iOS and Android apps.
+				\item Shared ownership of system architecture, infrastructure, continuous integration, testing, deployment. Extensive use of AWS, Docker, Jenkins, Terraform, Prometheus, Kibana (ELK stack).
+				\item Wrote ETLs to extract data from legacy systems, transform it for new data models, and load into new systems.
+			\end{itemize}}
+		\cventry
+			{June 2015 - October 2015}{PHP Developer}
+			{Leopard Software}{Knutsford, Cheshire}
+			{}{\begin{itemize}
+				\item Developed, maintained, and supported legacy software in an agile team for B2B and client-facing products.
+			\end{itemize}}
+		\cventry
+			{Feb 2015 - June 2015}{WordPress Developer}
+			{Webdapper Ltd.}{Remote}
+			{}{\begin{itemize}
+				\item Created bespoke WordPress theme and plugins for clients.
+				\item Gained remote working skills by utilising JIRA and GitHub.
+			\end{itemize}}
+		\cventry
+			{Jul 2013 - Jul 2014}{Web Developer (Industrial Year)}
+			{Lighthouse Design for Business Ltd.}{Shrewsbury, Shropshire}
+			{}{\begin{itemize}
+				\item Wrote an internal jobs system in AngularJS with a PHP driven JSON REST API and Bootstrap front-end.
+				\item Created WordPress and Magento themes, interactive web applications with AngularJS, and static websites based on existing designs and specifications.
+				\item Produced and maintained bespoke WordPress plugins based upon client requirements.
+				\item Gained customer interaction skills and a deep knowledge of WordPress driven websites. Learned AngularJS to write interactive web applications.
+			\end{itemize}}
+%		\cventry
+%			{Jun 2011 - Sep 2011}{1$^{st}$, 2$^{nd}$ and 3$^{rd}$ line IT support}
+%			{Siemens Automation and Drives PLC}{Congleton, Cheshire}
+%			{}{\begin{itemize}
+%				\item Provided phone and in-person IT support for software, hardware and network related problems.
+%				\item Maintained the factory and office networks, including VOIP phones and assembly line equipment.
+%				\item Responsible for taking daily, weekly, and monthly backups and moving them off-site.
+%				\item Working with one of the largest Active Directories in world (Siemens AG) to manage users and roles globally.
+%			\end{itemize}}
+%		\cventry
+%			{Jun 2010 - Sep 2010}{Electronics Rework and Repair}
+%			{Siemens Automation and Drives PLC}{Congleton, Cheshire}
+%			{}{\begin{itemize}
+%				\item Identify and replace faulty electrical components on manufactured PCBs.
+%				\item Gained through hole and surface mount component soldering skills.
+%			\end{itemize}}
+
+	\section{Personal Projects}
+		\cventry
+			{}{Personal projects, voluntary contributions and some university work}
+			{\href{https://github.com/bbrks}{github.com/bbrks}}{}
+			{}{\begin{itemize}
+				\item \href{https://github.com/bbrks/shotgun}{\textbf{shotgun} - A CLI tool for running commands in parallel on a set of directories.}
+				\item \href{https://github.com/bbrks/midata}{\textbf{midata} - A library for Go relating to the midata financial format.}
+			\end{itemize}}
+		\cventry
+			{Oct 2016 - Present}{Owner, Developer, SysAdmin}
+			{\href{https://operat.io}{Operatio}}{\url{https://operat.io}}
+			{}{A simple but configurable, open-source, self-hosted task-board, written in Go and React.}
+		\cventry
+			{Jul 2014 - Present}{Owner, Developer, SysAdmin, Writer, Photographer}
+			{\href{https://wanderings.in}{Wanderings In...}}{\url{https://wanderings.in}}
+			{}{A travel blog, featuring photography and posts from my travels.}
+		\cventry
+			{Jan 2010 - Sep 2016}{Owner, SysAdmin}
+			{TF2Dingalings}{}
+			{}{Defunct site built around user-uploaded sound files for the Team Fortress 2 game.\newline{}
+			Featured in PCGamer and TFPortal.}
+%		\cventry
+%			{Aug 2007 - Jan 2012}{Owner, Community Manager, SysAdmin}
+%			{Gluttony}{}
+%			{}{Online gaming community (\textasciitilde150 members)\newline{}
+%			Organised and run events, forums, several game servers, web servers, and related side-projects.}
+
+	\section{Education}
+		\cventry
+			{Sep 2011 - Jun 2015}{BSc (Hons) Computer Science (BCS Accredited)}
+			{University of Wales, Aberystwyth}{Aberystwyth, Ceredigion}
+			{}{Second-class honours, upper division (2:1)\\Merit award scholarship in Computer Science and ICT}
+				\vspace{.25em}
+				\cvline{Dissertation (AWESOME)}{A web-based tool to evaluate the feedback of students for university modules. Written with a bespoke PHP MVC framework, an admin dashboard generates surveys from imported CSV data via university systems. Students receive anonymous but tailored questionnaires to target problem areas in their department, course, and lectures.}
+				\vspace{.25em}
+				\cvline{Module Results}{\vspace{-1em}
+					\begin{multicols}{2}
+						\begin{itemize}
+							\item 1$^{st}$ - Web Development (HTML/CSS/JS)
+							\item 1$^{st}$ - Web Programming (PHP/Perl)
+							\item 1$^{st}$ - Interactive Web Programming (Canvas)
+							\item 1$^{st}$ - System And Network Administration
+							\item 1$^{st}$ - Software Development (Java)
+							\item 1$^{st}$ - Advanced Computer Graphics (WebGL)
+							\item 1$^{st}$ - Hardware, Operating Systems And Unix
+							\item 1$^{st}$ - Space Robotics
+							\item 1$^{st}$ - Communications And Telematics
+							\item 1$^{st}$ - Professional And Personal Development
+							\item 1$^{st}$ - Computer Science Mathematics
+							\item 2:1 - Internet-Based Applications (Ruby)
+							\item 2:1 - Modelling Persistent Data (PostgreSQL)
+							\item 2:1 - C And Unix Programming
+%							\item 2:1 - Astronomy
+						\end{itemize}
+					\end{multicols}}
+
+	\section{Skills}
+		\subsection{Languages}
+			\cvline{}{\begin{multicols}{4}
+			\begin{itemize}
+				\item Bash/Shell
+				\item C/C++
+				\item CSS3/SASS
+				\item Go (golang)
+				\item HTML5
+				\item Java
+				\item ES6/JavaScript/JSON
+				\item Markdown
+				\item YAML/TOML
+				\item TypeScript
+				\item \LaTeX
+				\item PHP
+				\item Python
+				\item Regex
+				\item Ruby on Rails
+				\item SQL
+				\item Swift
+				\item WebGL/GLSL
+				\item XHTML/XML
+			\end{itemize}
+			\end{multicols}}
+		\subsection{DevOps/Infrastructure}
+			\cvline{}{\begin{multicols}{4}
+			\begin{itemize}
+				\item AWS
+				\item Terraform
+				\item CoreOS/Fleet/Rkt
+				\item Docker/Swarm
+				\item Jenkins
+				\item TravisCI
+				\item Kibana (ELK)
+				\item Prometheus
+			\end{itemize}
+			\end{multicols}}
+		\subsection{Frameworks/Misc}
+			\cvline{}{\begin{multicols}{4}
+			\begin{itemize}
+				\item AngularJS
+				\item Angular 2
+				\item Bootstrap
+				\item Cocoa
+				\item Ghost
+				\item Git
+				\item jQuery
+				\item Magento
+				\item osCommerce
+				\item phpBB
+				\item Tumblr
+				\item vBulletin
+				\item WordPress
+			\end{itemize}
+			\end{multicols}}
+
+%	\section{Interests}
+%		\cvline{}{}
+
+%	\section{Languages}
+%		\begin{multicols}{2}
+%			\cvline{English}{Native}
+%			\cvline{German}{Basic}
+%		\end{multicols}
+
+	\section{Contact}
+		\begin{multicols}{2}
+			\cvline{Phone}{+44 (0)7784-144-093}
+			\cvline{E-Mail}{\href{mailto:ben@bbrks.me}{ben@bbrks.me}}
+			\cvline{LinkedIn}{\url{https://linkedin.com/in/bbrks}}
+			\cvline{GitHub}{\url{https://github.com/bbrks}}
+			\cvline{Blog}{\url{https://bbrks.me}}
+		\end{multicols}
+
+	\section{References}
+		\IfFileExists{./references.tex}{
+			\input{./references.tex}
+		}{
+			References available upon request.
+		}
+
+\end{document}
